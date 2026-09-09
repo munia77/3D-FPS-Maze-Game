@@ -1,0 +1,192 @@
+# 🎮 3D FPS Maze Game
+
+A 3D first-person maze shooter developed using **Python and OpenGL (PyOpenGL)**. The game combines maze exploration, combat, resource management, enemy AI, and a final boss battle across four progressively challenging levels.
+
+## 🕹️ Features
+
+* 🎯 First-person shooting gameplay
+* 🧩 Multiple maze-based levels
+* 👾 Different enemy types:
+
+  * Sentry Turrets
+  * Chaser Enemies
+  * Final Boss
+* 🔫 Player shooting and ammunition system
+* ❤️ Health and damage system
+* 📦 Health and ammunition pickups
+* 🔑 Keycard collection system
+* 🚪 Locked portals for level progression
+* 🔥 Lava hazards
+* 💥 Bullet and particle/spark effects
+* 🗺️ Real-time minimap
+* 👁️ Inspection/third-person camera mode
+* 🏆 Score system
+* ⚔️ Multi-phase boss battle
+* 🔄 Restart and game-over system
+
+## 📌 Game Levels
+
+### Level 1 — Sentry Maze
+
+Navigate through the maze while fighting automated sentry turrets. Find the hidden keycard and use it to unlock the portal.
+
+### Level 2 — Hunter Corridors
+
+Face fast-moving chaser enemies while navigating a more complex maze.
+
+### Level 3 — Crossfire Labyrinth
+
+A larger and more challenging maze containing both turrets and chaser enemies.
+
+### Level 4 — Lava Core Boss
+
+Enter the final arena containing lava hazards and fight the final boss to complete the mission.
+
+## 🎮 Controls
+
+| Key                  | Action                   |
+| -------------------- | ------------------------ |
+| `W`                  | Move forward             |
+| `S`                  | Move backward            |
+| `A`                  | Strafe left              |
+| `D`                  | Strafe right             |
+| `Q`                  | Turn left                |
+| `E`                  | Turn right               |
+| `Arrow Left`         | Turn left                |
+| `Arrow Right`        | Turn right               |
+| `Arrow Up`           | Look up                  |
+| `Arrow Down`         | Look down                |
+| `Space`              | Shoot                    |
+| `Left Mouse Button`  | Shoot                    |
+| `C`                  | Toggle inspection camera |
+| `Right Mouse Button` | Toggle inspection camera |
+| `R`                  | Restart game             |
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **PyOpenGL**
+* **OpenGL**
+* **GLUT**
+* **GLU**
+* Python `math`
+* Python `random`
+* Python `time`
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/3D-FPS-Maze-Game.git
+cd 3D-FPS-Maze-Game
+```
+
+### 2. Install dependencies
+
+```bash
+pip install PyOpenGL PyOpenGL_accelerate
+```
+
+### 3. Run the game
+
+```bash
+python "Final-project.py"
+```
+
+> Make sure your system has a working OpenGL-compatible environment.
+
+## 🧠 Main Game Systems
+
+### Player Movement
+
+The player can move forward, backward, and sideways while collision detection prevents movement through maze walls.
+
+### Combat System
+
+The player fires projectiles using keyboard or mouse input. Ammunition is limited, so ammo pickups are required during gameplay.
+
+### Enemy System
+
+The game contains two regular enemy types:
+
+* **Turrets** track the player when they have line of sight and fire projectiles.
+* **Chasers** move toward the player when they detect them and otherwise wander around the maze.
+
+### Keycard & Portal System
+
+In the first three levels, the player must locate a randomly positioned keycard before the level portal becomes accessible.
+
+### Boss Battle
+
+The fourth level contains a large boss with its own health, projectile attacks, shockwave attack, and multiple combat phases.
+
+## 🗺️ Minimap
+
+A minimap is displayed during gameplay to help the player understand the maze layout and locate important objects such as the player, portal, and keycard.
+
+## 🎨 Graphics
+
+The game uses OpenGL primitives such as cubes and cylinders to construct:
+
+* Maze walls
+* Player model
+* Weapons
+* Enemies
+* Boss
+* Pickups
+* Projectiles
+* Portals
+* Keycards
+* Health bars
+
+Particle-like spark effects are also generated for shooting, enemy destruction, and other interactions.
+
+## 📂 Project Structure
+
+```text
+3D-FPS-Maze-Game/
+│
+├── Final-project.py
+├── README.md
+└── requirements.txt
+```
+
+## 🎓 Academic Project
+
+This project was developed as a computer graphics/game development project to demonstrate practical concepts including:
+
+* 3D transformations
+* Camera systems
+* OpenGL rendering
+* Collision detection
+* Basic enemy AI
+* Projectile physics
+* Game state management
+* Animation
+* Lighting-free primitive-based modeling
+* HUD and minimap rendering
+
+## 🚀 Future Improvements
+
+Possible future improvements include:
+
+* Sound effects and background music
+* More detailed 3D models
+* Textures and lighting
+* More enemy types
+* Improved enemy pathfinding
+* More levels
+* Save/load functionality
+* Main menu and settings
+* Multiplayer support
+
+## 👩‍💻 Author
+
+**Mahabuba Akter Munia**
+
+Computer Science Student
+
+---
+
+⭐ If you like this project, consider giving the repository a star!
